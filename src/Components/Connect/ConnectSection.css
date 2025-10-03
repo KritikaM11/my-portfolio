@@ -1,0 +1,223 @@
+.connect {
+    margin-top: 5vh;
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: white;
+    background-color: #10355a;
+
+}
+
+.getintouch {
+   
+    margin: 12px auto;
+    max-width: 90%;
+    
+}
+
+.getintouch h1 {
+    font-family: "Lora", serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.getintouch img {
+    margin-left: 540px; 
+}
+
+.connect-section {
+    margin: 20vh 8vw;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+}
+
+.left-connect {
+    height: 50vh;
+}
+
+.left-connect h1 {
+    font-family: "Lora", serif;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.left-connect p {
+    font-size: 15px;
+    text-align: left;
+    line-height: 3vh;
+}
+
+.left-connect .info {
+    margin-top: 4vh;
+    line-height: 4vh;
+    color: #7ca7d2;
+    ;
+}
+
+.left-connect a {
+    text-decoration: none;
+    color: white;
+    color: #7ca7d2;
+    ;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Only invert the email icon */
+.email img,
+.twitter,
+.githubimage {
+    filter: invert(1);
+}
+
+.right-connect form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.right-connect input {
+    border: 2px solid white;
+    width: 30vw;
+    height: 6vh;
+    border-radius: 5px;
+    background: transparent;
+    padding: 2px;
+    color: white;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.right-connect textarea {
+    border: 2px solid white;
+    width: 30vw;
+    height: 20vh;
+    border-radius: 5px;
+    background: transparent;
+    padding: 2px;
+    color: white;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.right-connect button {
+    margin-top: 15px;
+    border: none;
+    width: 31.5vw;
+    height: 6vh;
+    border-radius: 5px;
+    padding: 2px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #5392d1;
+    color: white;
+    transition: all ease 0.5s;
+
+}
+
+.right-connect button:hover {
+    transform: scale(1.05);
+}
+
+.footer{
+    text-align: center;
+    background-color: black;
+    padding: 5px;
+}
+
+/* Responsive */
+
+
+@media (max-width: 768px) {
+    .getintouch {
+        margin-bottom: 0%;
+
+    }
+
+    .getintouch h1 {
+        font-size: 70px;
+    }
+
+    .getintouch img {
+        margin-left: 120px;
+    }
+
+    .connect {
+        height: auto;
+    }
+
+    .connect-section {
+        margin: 4vh 6vw;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+
+    }
+
+    .left-connect {
+        height: auto;
+    }
+
+    .left-connect h1 {
+        text-align: center;
+        font-size: 48px;
+    }
+
+    .left-connect p {
+        margin: 18px 0;
+        font-size: 19px;
+        text-align: center;
+        line-height: 3vh;
+    }
+
+    .left-connect .info {
+        margin-top: 1vh;
+        line-height: 4vh;
+        color: #7ca7d2;
+        align-items: center;
+    }
+
+    .left-connect a {
+        font-size: 25px;
+    }
+
+    .phone p {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    .contact-img {
+        margin-top: 10px;
+    }
+
+    .right-connect form {
+        align-items: center;
+    }
+
+    .right-connect input,
+    .right-connect textarea {
+        width: 80%;
+    }
+
+    .right-connect button {
+        width: 80%;
+    }
+}

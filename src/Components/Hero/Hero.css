@@ -1,0 +1,155 @@
+.hero {
+    min-height: 100vh;
+    height: auto;
+    margin: 0 1vw;
+}
+
+.hero-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    /* covers navbar + half hero */
+    background: linear-gradient(135deg, #ff9a9e, #667eea, #667eea,
+            /* bluish-purple */
+            #764ba2 ,
+            /* violet */
+            #e1306c ,
+            /* pinkish-red */
+            #f77737 ,
+            /* orange */
+            #ddc422,
+            /* yellow */
+            #fcb045, #fad0c4);
+    background-size: 400% 400%;
+    animation: gradientFlow 20s ease infinite;
+    z-index: -1;
+    /* keep it behind navbar + text */
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.hero img {
+    width: 60vh;
+    height: 58vh;
+    border-radius: 50%;
+    position: relative;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 90px; 
+    gap: 80px;
+
+}
+
+.hero-content h1 {
+    font-size: 90px;
+    font-weight: 550;
+    color: white;
+    font-family: "Lora", serif;
+}
+
+.hero-left p{
+    font-size: 28px;
+}
+
+.hero-left h3 {
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+
+}
+.hero-left h2{
+    font-size: 40px;
+    font-weight: 900;
+    color:  #131d4b;
+}
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+.hero-buttons button {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, 
+      white
+    );
+    color: black; /* for text contrast */
+    cursor: pointer;
+    border: 2px solid rgba(193, 38, 64, 0.627);
+}
+/* Tablets (≤ 1024px) */
+@media (max-width: 768px) {
+  .hero-content {
+    margin-bottom: 30px;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px;
+    gap: 15px;
+  }
+  .hero img {
+    margin-top: 30px;
+    width: 48vh;
+    height: 48vh;
+  }
+  .hero-content h3 {
+    color: black;
+    font-size: 35px;
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 65px;
+    color: black;
+  }
+  .hero-left h2 {
+    font-size: 35px;
+    color:  #e1306c ;
+  }
+  .hero-left p {
+    font-size: 32px;
+  }
+  .hero-buttons{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8vh;
+  }
+  .hero-buttons button{
+    font-size: 25px;
+  }
+  .hero-gradient{
+    width: 102.5vw;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 574px){
+   .hero img {
+    margin-top: 30px;
+    width: 42vh;
+    height: 42vh;
+  }
+  .hero-content h3 {
+    margin-top: 20px;
+  }
+}

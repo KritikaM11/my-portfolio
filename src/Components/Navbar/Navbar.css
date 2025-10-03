@@ -1,0 +1,111 @@
+.navbar {
+    height: auto;
+    
+}
+
+.nav-section {
+    height: auto;
+    padding: 0 40px;
+    border-radius: 30px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    position: relative;
+    border: 2px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}
+
+.anchor-link:hover {
+    color: black;
+    transform: scale(1.1);
+}
+
+.hamburger,
+.cross {
+    display: none;
+}
+
+.kritika:hover {
+    transform: scale(1.05);
+    filter: invert();
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-section {
+        border: none;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: block;
+        position: fixed;
+        right: 50px;
+        filter: invert();
+    }
+
+    .cross {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        display: block;
+        cursor: pointer;
+        z-index: 1000;
+        filter: invert();
+    }
+
+    .hamburger:hover,
+    .cross:hover {
+        transform: scale(1.05);
+    }
+
+    .nav-content {
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        gap: 25px;
+        bottom: 0;
+        background: linear-gradient(4deg,
+                #f77737,
+                #e1306c,
+                /* pinkish-red */
+                #fcb045, #fad0c4);
+        width: 300px;
+        height: 100vh;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -300px;
+        padding-top: 60px;
+    }
+
+    .nav-content li {
+        font-size: 30px;
+        flex-direction: row;
+        gap: 10px;
+        width: 220px;
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+}
