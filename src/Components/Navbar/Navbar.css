@@ -1,9 +1,10 @@
 .navbar {
     height: auto;
-    
+    width: 100%;
 }
 
 .nav-section {
+    width: 100%;
     height: auto;
     padding: 0 40px;
     border-radius: 30px;
@@ -59,7 +60,7 @@
     .hamburger {
         display: block;
         position: fixed;
-        right: 50px;
+        right: 1.5rem; 
         filter: invert();
     }
 
@@ -94,9 +95,13 @@
         height: 100vh;
         z-index: 2;
         transition: right 0.5s;
+       
         right: -300px;
         padding-top: 60px;
     }
+    .nav-content.active {
+    transform: translateX(0);  /* ✅ slides in cleanly without overflow */
+}
 
     .nav-content li {
         font-size: 30px;
