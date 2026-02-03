@@ -9,15 +9,15 @@ const navBar = () => {
   const menuRef = useRef();
 
   const openMenu = () =>{
-    menuRef.current.style.right = "0";
+    menuRef.current.style.right = "-20px";
   }
   const closeMenu = ()=>{
-    menuRef.current.style.right = "-300px"
+    menuRef.current.style.right = "-320px"
   }
   return (
     <div id='Navbar' className='navBar'>
       <div className="nav-section">
-        <img className='kritika' src={kritika} width={150}/>
+        <img className='kritika' src={kritika} width={150} alt='logo'/>
         <img className='hamburger' onClick={openMenu} src={hamburger} width={50} />
         <ul className="nav-content" ref={menuRef}>
           <img className='cross' onClick={closeMenu} src={cross} width={60} />

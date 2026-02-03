@@ -4,65 +4,48 @@
     overflow-x: hidden;
     color: white;
     background-color: #10355a;
-padding-top: 80px;
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
 
 .getintouch {
-   
     margin: 12px auto;
     max-width: 90%;
-    
+text-align: center;
 }
 
 .getintouch h1 {
     font-family: "Lora", serif;
-    text-align: center;
     font-size: 50px;
     font-weight: 500;
 }
 
 .getintouch img {
-    margin-left: 540px; 
+    display: block;
+    margin: 0 auto;
 }
 
 .connect-section {
-    margin: 20vh 8vw;
-    margin-top: 15vh;
+    margin: 8vh 8vw;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 10%;
+    align-items: flex-start;
+    gap: 5%;
 }
-
 .left-connect {
-    height: 50vh;
+    flex: 1; /* Takes available space */
 }
-
 .left-connect h1 {
     font-family: "Lora", serif;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 500;
-    text-align: left;
+    margin-bottom: 20px;
 }
 
 .left-connect p {
-    font-size: 15px;
-    text-align: left;
-    line-height: 3vh;
-}
-
-.left-connect .info {
-    margin-top: 4vh;
-    line-height: 4vh;
-    color: #7ca7d2;
-    ;
-}
-
-.left-connect a {
-    text-decoration: none;
-    color: white;
-    color: #7ca7d2;
-    ;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
 }
 
 .info {
@@ -74,7 +57,13 @@ padding-top: 80px;
 .info div {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+}
+
+.info a, .info p {
+    text-decoration: none;
+    color: #7ca7d2;
+    font-size: 18px;
 }
 
 /* Only invert the email icon */
@@ -84,66 +73,96 @@ padding-top: 80px;
     filter: invert(1);
 }
 
+.right-connect {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
 .right-connect form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 15px;
+    width: 100%;          /* Full width of container */
+    max-width: 500px;     /* Cap width for large screens */
 }
 
-.right-connect input {
+.right-connect input,
+.right-connect textarea {
     border: 2px solid white;
-    width: 30vw;
-    height: 6vh;
+    width: 100%;          /* ✅ FIX: Fluid width */
     border-radius: 5px;
     background: transparent;
-    padding: 2px;
+    padding: 15px;        /* More padding */
     color: white;
-    font-size: 15px;
-    padding-left: 15px;
+    font-size: 16px;
+    font-family: inherit;
 }
 
 .right-connect textarea {
-    border: 2px solid white;
-    width: 30vw;
-    height: 20vh;
-    border-radius: 5px;
-    background: transparent;
-    padding: 2px;
-    color: white;
-    font-size: 15px;
-    padding-left: 15px;
-    padding-top: 10px;
+    height: 150px;
+    resize: vertical;     /* Allows user to resize vertically only */
 }
 
 .right-connect button {
-    margin-top: 15px;
+    width: 100%;
+    padding: 15px;
     border: none;
-    width: 31.5vw;
-    height: 6vh;
     border-radius: 5px;
-    padding: 2px;
-    text-align: center;
-    font-size: 17px;
-    font-weight: 500;
-    cursor: pointer;
     background: #5392d1;
     color: white;
-    transition: all ease 0.5s;
-
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .right-connect button:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
+    background: #4a84be;
 }
 
-.footer{
+.footer {
     text-align: center;
     background-color: black;
-    padding: 5px;
+    padding: 15px;
+    margin-top: 50px;
 }
 
-/* Responsive */
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .connect-section {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .left-connect h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .left-connect p {
+        text-align: center;
+    }
+
+    .info {
+        align-items: center; /* Centers contact info */
+    }
+
+    .right-connect {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .getintouch h1 {
+        font-size: 36px;
+    }
+    .left-connect h1 {
+        font-size: 28px;
+    }
+}
+/* Responsive
 
 
 @media (max-width: 768px) {
@@ -220,4 +239,4 @@ padding-top: 80px;
     .right-connect button {
         width: 80%;
     }
-}
+} */

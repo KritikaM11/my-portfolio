@@ -16,9 +16,6 @@ const App = () => {
       <section>< Skills /></section>
       <section>< Projects /></section>
       <section><ConnectSection /></section>
-
-
-
     </div>
   )
 }
