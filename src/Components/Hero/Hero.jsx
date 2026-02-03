@@ -15,8 +15,8 @@ const Hero = () => {
                     <br />
                     <p >I create dynamic, responsive websites that blend creativity with efficiency.</p>
                     <div className="hero-buttons">
-                        <AnchorLink className='anchor-link' offset='50' href='#Contact'>  <button>Connect with me</button></AnchorLink>
-                        <a href="https://drive.google.com/file/d/1lvzW29nSAK8NFXAfurzjIKboP_4ca6Yd/view?usp=drive_link"> <button className='resume'>My resume</button></a>
+                        <AnchorLink className='anchor-link' offset='50' href='#Contact'>  <button >Connect with me</button></AnchorLink>
+                        <a href="https://drive.google.com/file/d/1pGfQ3p7LJVJsr7TfQyexra8SN7H4RarP/view?usp=sharing"> <button className='resume'>My Resume</button></a>
                        
                     </div>
                 </div>
