@@ -1,7 +1,7 @@
 .skills {
     min-height: 100vh;
     height: auto;
-    color: black;
+    color: var(--text-main);
     padding-top: 60px;
 }
 
@@ -102,4 +102,8 @@
         max-width: 100%;
         min-height: auto; /* Allow auto height on mobile */
     }
+}
+
+[data-theme="dark"] .github img {
+    filter: invert(1);
 }

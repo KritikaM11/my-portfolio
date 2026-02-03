@@ -42,7 +42,7 @@
     padding: 40px;
     width: 100%;
     max-width: 1200px; /* Prevents it from getting too wide on huge screens */
-    background: white;
+    background: var(--card-bg);
 }
 .myproject-left {
     flex: 1;
@@ -89,7 +89,7 @@
 .myproject-left p {
   font-size: 16px;
   font-weight: 300;
-  color: #555;
+  color: var(--text-main);
 }
 
 
@@ -116,3 +116,6 @@
     }
 }
 
+[data-theme="dark"] .github img {
+    filter: invert(1);
+}

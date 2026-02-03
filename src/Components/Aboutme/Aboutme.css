@@ -1,6 +1,6 @@
 .aboutme {
     min-height: 100vh;
-    background-color: #F6F9FC;
+    background-color: var(--section-bg);
     padding-top: 65px;
     padding-bottom: 50px;
 }

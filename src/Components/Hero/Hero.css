@@ -129,7 +129,6 @@
   background: linear-gradient(135deg, #f77737, #e1306c);
   color: white;
   border: none;
-  margin-right: 10px;
 }
 
 /* Tablets (≤ 1024px) */
@@ -154,18 +153,18 @@
 
   .hero-content h1 {
     font-size: 65px;
-    color: black;
+    color:var(--text-main);
   }
 
   .hero-content h3 {
-    color: black;
+    color:var(--text-main);
     font-size: 35px;
     text-align: center;
   }
 
   .hero-left h2 {
     font-size: 35px;
-    color: #e1306c;
+    color: var(--text-secondary);
   }
 
   .hero-left p {
@@ -182,25 +181,21 @@
 
   .hero-buttons a {
     display: flex;
-    /* Turns the <a> tag into a box */
     justify-content: center;
-    /* Centers the button inside the link */
     width: 100%;
-    /* Ensures the link spans the full width */
     text-decoration: none;
-    /* Removes underlines */
+    border: none;
   }
 
   .hero-buttons button {
     width: 70%;
-    /* Buttons take 70% of screen width */
     max-width: 300px;
-    /* Stop them from getting too huge */
     font-size: 20px;
     margin: 0;
-    /* Remove any accidental margins */
     display: block;
-    /* Ensures button behaves like a block */
+  }
+  .hero-buttons a:first-child button {
+    border: none !important;
   }
 }
 
@@ -239,4 +234,7 @@
     font-size: 26px;
   }
 
+  .hero-gradient {
+   height: 63vh;
+  }
 }

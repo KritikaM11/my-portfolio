@@ -27,3 +27,34 @@ hr {
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
+/* 1. Define the Light Mode Colors (Default) */
+:root {
+    --bg-color: white;
+    --text-main: black;
+    --text-secondary: #131d4b; /* Dark blue from Hero */
+    --section-bg: #F6F9FC;     /* Light grey from About Me */
+    --card-bg: white;
+    --border-color: #eb8a44;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* 2. Define the Dark Mode Colors */
+[data-theme="dark"] {
+    --bg-color: #0d1117;       /* Very dark blue/black */
+    --text-main: #e6edf3;      /* Soft white */
+    --text-secondary: #58a6ff; /* Light blue for accents */
+    --section-bg: #161b22;     /* Slightly lighter dark section */
+    --card-bg: #21262d;        /* Dark grey for cards */
+    --border-color: #30363d;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 3. Apply variables to the Body */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth fade! */
+    overflow-x: hidden;
+    width: 100%;
+}
