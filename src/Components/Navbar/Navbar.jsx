@@ -1,9 +1,9 @@
 import React, { useRef } from 'react'
 import './Navbar.css'
-import kritika from './image.png'
+import kritika from "./navphoto/image.png"
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import hamburger from "./hamburger.png"
-import cross from "./cross.png"
+import hamburger from "./navphoto/hamburger.png"
+import cross from "./navphoto/cross.png"
 
 const navBar = () => {
   const menuRef = useRef();
@@ -17,7 +17,7 @@ const navBar = () => {
   return (
     <div id='Navbar' className='navBar'>
       <div className="nav-section">
-        <img className='kritika' src={kritika} width={150} />
+        <img className='kritika' src={kritika} width={150}/>
         <img className='hamburger' onClick={openMenu} src={hamburger} width={50} />
         <ul className="nav-content" ref={menuRef}>
           <img className='cross' onClick={closeMenu} src={cross} width={60} />

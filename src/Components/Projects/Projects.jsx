@@ -1,9 +1,9 @@
 import React from 'react'
 import './projects.css'
 import github from '../skills/skillsimg/github.png';
-import spotify from "./spotify.png"
-import golf from "./golf.png"
-import myntra from "./myntra.png"
+import spotify from "./projectphoto/spotify.png"
+import golf from "./projectphoto/golf.png"
+import myntra from "./projectphoto/myntra.png"
 
 
 const projects = () => {

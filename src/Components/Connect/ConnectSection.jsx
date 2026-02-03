@@ -1,11 +1,11 @@
 import React from 'react'
 import './ConnectSection.css'
-import emailIcon from "../Connect/email.png";
-import phoneIcon from "../Connect/phone-solid-full.svg";
-import linkedinIcon from "../Connect/linkedin.png";
-import twitterIcon from "../Connect/twitter.png";
-import instagramIcon from "../Connect/instagram.png";
-import github from "../Connect/githubimage.png";
+import emailIcon from "../Connect/connectphoto/email.png";
+import phoneIcon from "../Connect/connectphoto/phone-solid-full.svg";
+import linkedinIcon from "../Connect/connectphoto/linkedin.png";
+import twitterIcon from "../Connect/connectphoto/twitter.png";
+import instagramIcon from "../Connect/connectphoto/instagram.png";
+import github from "../Connect/connectphoto/githubimage.png";
 
 const ConnectSection = () => {
   const onSubmit = async (event) => {

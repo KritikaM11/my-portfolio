@@ -10,7 +10,7 @@
     left: 0;
     width: 100%;
     overflow-x: hidden;
-    height: 60vh;
+    height: 70vh;
     /* covers navbar + half hero */
     background: linear-gradient(135deg, #ff9a9e, #667eea, #667eea,
             /* bluish-purple */
@@ -58,6 +58,8 @@
     align-items: center;
     padding: 90px 90px; 
     gap: 80px;
+    padding-top: 180px;
+  
 
 }
 
@@ -101,12 +103,12 @@
     border: 2px solid rgba(193, 38, 64, 0.627);
 }
 /* Tablets (≤ 1024px) */
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .hero-content {
     margin-bottom: 30px;
     flex-direction: column-reverse;
     text-align: center;
-    padding: 40px;
+    padding-top: 100px;
     gap: 15px;
   }
   .hero img {

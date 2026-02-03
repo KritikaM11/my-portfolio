@@ -1,6 +1,7 @@
 .aboutme {
     min-height: 100vh;
     background-color: #F6F9FC;
+    padding-top: 100px;
 }
 
 .about-title {
@@ -38,7 +39,7 @@
 }
 
 /* Tablets (≤ 1024px) */
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .about-section {
     position: relative;
     display: flex;
@@ -67,7 +68,7 @@
 }
 
 .about-title img {
-    margin-left: 180px;
+    margin-left: 25rem;
 }
 
 }

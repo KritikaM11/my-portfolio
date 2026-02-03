@@ -10,7 +10,7 @@ import Projects from './Components/Projects/Projects'
 const App = () => {
   return (
     <div>
-      <section>< Navbar /> </section>
+      <Navbar />
       <section>  < Hero /></section>
       <section> < Aboutme /></section>
       <section>< Skills /></section>

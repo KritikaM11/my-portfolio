@@ -1,20 +1,26 @@
-.navbar {
+.navBar {
     height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 .nav-section {
-    width: 100%;
+    width: 80%;
     height: auto;
     padding: 0 40px;
     border-radius: 30px;
-    margin: 10px;
+    margin: 10px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
     position: relative;
-    border: 2px solid white;
+    border: 2px solid rgb(171, 147, 147);
+    background:#F6F9FC;
+    backdrop-filter: blur(10px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
@@ -32,7 +38,7 @@
 
 .anchor-link {
     text-decoration: none;
-    color: white;
+    color: rgb(145, 67, 67);
 }
 
 .anchor-link:hover {
@@ -44,11 +50,9 @@
 .cross {
     display: none;
 }
-
-.kritika:hover {
-    transform: scale(1.05);
-    filter: invert();
-    cursor: pointer;
+.kritika {
+   filter: invert();
+       cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -61,7 +65,6 @@
         display: block;
         position: fixed;
         right: 1.5rem; 
-        filter: invert();
     }
 
     .cross {
@@ -95,9 +98,9 @@
         height: 100vh;
         z-index: 2;
         transition: right 0.5s;
-       
-        right: -300px;
+        /* right: -300px; */
         padding-top: 60px;
+        border-radius: 30px;
     }
     .nav-content.active {
     transform: translateX(0);  /* ✅ slides in cleanly without overflow */
