@@ -126,10 +126,10 @@
 
 /* Make one button filled by default (Optional - looks better) */
 .hero-buttons a:first-child button {
-    background: linear-gradient(135deg, #f77737, #e1306c);
-    color: white;
-    border: none;
-    margin-right: 10px;
+  background: linear-gradient(135deg, #f77737, #e1306c);
+  color: white;
+  border: none;
+  margin-right: 10px;
 }
 
 /* Tablets (≤ 1024px) */
@@ -179,20 +179,29 @@
     width: 100%;
     gap: 10px;
   }
-  .hero-buttons a {
-        display: flex;          /* Turns the <a> tag into a box */
-        justify-content: center;/* Centers the button inside the link */
-        width: 100%;            /* Ensures the link spans the full width */
-        text-decoration: none;  /* Removes underlines */
-    }
 
-    .hero-buttons button {
-        width: 70%;             /* Buttons take 70% of screen width */
-        max-width: 300px;       /* Stop them from getting too huge */
-        font-size: 20px;
-        margin: 0;              /* Remove any accidental margins */
-        display: block;         /* Ensures button behaves like a block */
-    }
+  .hero-buttons a {
+    display: flex;
+    /* Turns the <a> tag into a box */
+    justify-content: center;
+    /* Centers the button inside the link */
+    width: 100%;
+    /* Ensures the link spans the full width */
+    text-decoration: none;
+    /* Removes underlines */
+  }
+
+  .hero-buttons button {
+    width: 70%;
+    /* Buttons take 70% of screen width */
+    max-width: 300px;
+    /* Stop them from getting too huge */
+    font-size: 20px;
+    margin: 0;
+    /* Remove any accidental margins */
+    display: block;
+    /* Ensures button behaves like a block */
+  }
 }
 
 @media (max-width: 770px) {
@@ -205,4 +214,29 @@
   .hero-left p {
     font-size: 25px;
   }
+}
+
+@media (max-width: 500px) {
+  .hero img {
+    margin-top: 30px;
+    width: 45vh;
+    height: 45vh;
+  }
+
+  .hero-content h1 {
+    font-size: 60px;
+  }
+
+  .hero-content h3 {
+    font-size: 30px;
+  }
+
+  .hero-left h2 {
+    font-size: 35px;
+  }
+
+  .hero-left p {
+    font-size: 26px;
+  }
+
 }

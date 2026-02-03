@@ -4,14 +4,13 @@
     overflow-x: hidden;
     color: white;
     background-color: #10355a;
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding-top: 55px;
 }
 
 .getintouch {
     margin: 12px auto;
     max-width: 90%;
-text-align: center;
+    text-align: center;
 }
 
 .getintouch h1 {
@@ -32,9 +31,12 @@ text-align: center;
     align-items: flex-start;
     gap: 5%;
 }
+
 .left-connect {
-    flex: 1; /* Takes available space */
+    flex: 1;
+    /* Takes available space */
 }
+
 .left-connect h1 {
     font-family: "Lora", serif;
     font-size: 45px;
@@ -60,7 +62,8 @@ text-align: center;
     gap: 15px;
 }
 
-.info a, .info p {
+.info a,
+.info p {
     text-decoration: none;
     color: #7ca7d2;
     font-size: 18px;
@@ -83,17 +86,21 @@ text-align: center;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 100%;          /* Full width of container */
-    max-width: 500px;     /* Cap width for large screens */
+    width: 100%;
+    /* Full width of container */
+    max-width: 500px;
+    /* Cap width for large screens */
 }
 
 .right-connect input,
 .right-connect textarea {
     border: 2px solid white;
-    width: 100%;          /* ✅ FIX: Fluid width */
+    width: 100%;
+    /* ✅ FIX: Fluid width */
     border-radius: 5px;
     background: transparent;
-    padding: 15px;        /* More padding */
+    padding: 15px;
+    /* More padding */
     color: white;
     font-size: 16px;
     font-family: inherit;
@@ -101,7 +108,8 @@ text-align: center;
 
 .right-connect textarea {
     height: 150px;
-    resize: vertical;     /* Allows user to resize vertically only */
+    resize: vertical;
+    /* Allows user to resize vertically only */
 }
 
 .right-connect button {
@@ -146,7 +154,8 @@ text-align: center;
     }
 
     .info {
-        align-items: center; /* Centers contact info */
+        align-items: center;
+        /* Centers contact info */
     }
 
     .right-connect {
@@ -158,10 +167,12 @@ text-align: center;
     .getintouch h1 {
         font-size: 36px;
     }
+
     .left-connect h1 {
         font-size: 28px;
     }
 }
+
 /* Responsive
 
 

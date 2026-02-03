@@ -4,7 +4,7 @@ import github from '../skills/skillsimg/github.png';
 import spotify from "./projectphoto/spotify.png"
 import golf from "./projectphoto/golf.png"
 import myntra from "./projectphoto/myntra.png"
-
+import stayscout from "./projectphoto/stayscout.png"
 
 const projects = () => {
   return (
@@ -17,6 +17,18 @@ const projects = () => {
       <div className="project-content">
         <div className="myproject">
           <div className="myproject-left">
+            <h1>StayScout</h1>
+            <a href="https://stayscout-fdc8.onrender.com"><button>See it in Action</button></a>
+            <h3>A full-stack accommodation platform built with MERN, featuring secure Google OAuth login, Razorpay integration, and cloud image hosting.</h3>
+            <p>Node JS, EJS, Express, Mongoose, MongoDB, HTML, CSS, JavaScript</ p>
+            <a href="https://github.com/KritikaM11/StayScout"><img src={github} alt="" width={35} /></a>
+          </div>
+          <div className="myproject-right">
+            <img src={stayscout} width={500} height={280} />
+          </div>
+        </div>
+        <div className="myproject">
+          <div className="myproject-left">
             <h1>AsyncBeats</h1>
             <a href="https://kritikam11.github.io/AsyncBeats/"><button>See it in Action</button></a>
             <h3>Responsive & Interactive Song Website</h3>
@@ -24,35 +36,35 @@ const projects = () => {
             <a href="https://github.com/KritikaM11/AsyncBeats"><img src={github} alt="" width={35} /></a>
           </div>
           <div className="myproject-right">
-          <img src={spotify} width={500} height={280} />
+            <img src={spotify} width={500} height={280} />
+          </div>
         </div>
-      </div>
-      <div className="myproject">
-        <div className="myproject-left">
-          <h1>Golfy</h1>
-          <a href="https://kritikam11.github.io/golfy/"><button>See it in Action</button></a>
-          <h3> Interactive Golf Website Landing Page</h3>
-          <p>HTML, CSS, JavaScript, GSAP</ p>
-         <a href="https://github.com/KritikaM11/golfy"><img src={github} width={35} /></a> 
+        <div className="myproject">
+          <div className="myproject-left">
+            <h1>Golfy</h1>
+            <a href="https://kritikam11.github.io/golfy/"><button>See it in Action</button></a>
+            <h3> Interactive Golf Website Landing Page</h3>
+            <p>HTML, CSS, JavaScript, GSAP</ p>
+            <a href="https://github.com/KritikaM11/golfy"><img src={github} width={35} /></a>
+          </div>
+          <div className="myproject-right">
+            <img src={golf} width={500} height={280} />
+          </div>
         </div>
-        <div className="myproject-right">
-          <img src={golf} width={500} height={280} />
-        </div>
-      </div>
-      <div className="myproject">
-        <div className="myproject-left">
-          <h1>Myntra</h1>
-          <a href="https://kritikam11.github.io/Shopping-Website/"><button>See it in Action</button></a>
-          <h3>Shopping Myntra Website Landing Page</h3>
-          <p>HTML, CSS, JS</ p>
-          <a href="https://github.com/KritikaM11/Shopping-Website"><img src={github} width={35} /></a>
-        </div>
-        <div className="myproject-right">
-          <img src={myntra} width={500} height={280} />
+        <div className="myproject">
+          <div className="myproject-left">
+            <h1>Myntra</h1>
+            <a href="https://kritikam11.github.io/Shopping-Website/"><button>See it in Action</button></a>
+            <h3>Shopping Myntra Website Landing Page</h3>
+            <p>HTML, CSS, JS</ p>
+            <a href="https://github.com/KritikaM11/Shopping-Website"><img src={github} width={35} /></a>
+          </div>
+          <div className="myproject-right">
+            <img src={myntra} width={500} height={280} />
+          </div>
         </div>
       </div>
     </div>
-    </div >
   )
 }
 
