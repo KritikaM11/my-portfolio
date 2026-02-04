@@ -5,8 +5,10 @@
 }
 
 .portfolio-container {
-    width: 100%;
-    padding: 0 10rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .section-header {
@@ -127,13 +129,16 @@
 }
 
 @media (max-width: 1270px) {
-    .section-header{
-        margin-top: 70px;
+    .section-header {
+    margin-top: 3rem;  
+  }
+    .portfolio-grid{
+        gap: 2rem;
     }
 }
 @media (max-width: 780px) {
     .portfolio-container {
-    padding: 0 5rem;
+        width: 95%;
 }
 }
 
