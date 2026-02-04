@@ -1,0 +1,188 @@
+.portfolio-section {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.portfolio-container {
+    width: 100%;
+    padding: 0 10rem;
+}
+
+.section-header {
+  margin-bottom: 3rem;
+  border-left: 4px;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.section-subtitle {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Grid Layout */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+}
+
+
+/* Card Styles */
+.tech-card {
+  background-color: var(--card-bg);
+  border: 2px solid rgb(145, 67, 67);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border-color: rgb(145, 67, 67);
+}
+
+/* Experience Specifics */
+.role-badge {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: block;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: rgb(180, 136, 56);
+
+}
+
+.card-desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* LeetCode Special Card */
+.leetcode-card {
+  background: linear-gradient(135deg, #f77737, #e1306c);
+  border: 1px solid rgb(145, 67, 67);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.leetcode-card:hover {
+  border-color: var(--accent-orange);
+}
+
+.leetcode-icon-box {
+  background-color: rgba(249, 115, 22, 0.15);
+  color: var(--accent-orange);
+  padding: 0.75rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Utility for Flex headers inside cards */
+.card-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.provider-tag {
+    border: 2px solid  rgb(180, 136, 56);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+@media (min-width: 1270px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr 1.2fr; /* Experience takes less space, Certs take more */
+  }
+}
+
+@media (max-width: 1270px) {
+    .section-header{
+        margin-top: 70px;
+    }
+}
+@media (max-width: 780px) {
+    .portfolio-container {
+    padding: 0 5rem;
+}
+}
+
+/* Mobile fix for LeetCode card to prevent squishing */
+@media (max-width: 480px) {
+  .leetcode-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+}
+ .portfolio-container {
+    padding: 0 1.5rem;
+}
+
+.leetcode-card:hover {
+  border-color: var(--accent-orange);
+}
+
+.leetcode-icon-box {
+  background-color: rgba(249, 115, 22, 0.15);
+  color: var(--accent-orange);
+  padding: 0.75rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* Prevents icon from shrinking */
+}
+
+/* Utility for Flex headers inside cards */
+.card-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  gap: 10px; /* Adds space so text doesn't hit the button */
+  flex-wrap: wrap; /* RESPONSIVE FIX: Allows title and button to stack if screen is too small */
+}
+
+.provider-tag {
+  border: 2px solid rgb(180, 136, 56);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem; /* Slightly more padding for touch targets */
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  white-space: nowrap; /* Keeps the button text on one line */
+  flex-shrink: 0;
+}
