@@ -61,7 +61,7 @@ const Hero = () => {
                     <p id="desc-text" >{splitParagraph}</p>
                     <div className="hero-buttons">
                         <AnchorLink className='anchor-link' offset='50' href='#Contact'>  <button >Connect with me</button></AnchorLink>
-                        <a href="https://drive.google.com/file/d/1rBrUWqVZ8eH-qb-ShHxy4Q_2r6KjjPFv/view?usp=sharing"> <button className='resume'  >My Resume</button></a>
+                        <a href="https://drive.google.com/file/d/1t0dOAM-EvQdnFa2ZRBGqvE2Je1VLc7B3/view?usp=sharing"> <button className='resume'  >My Resume</button></a>
                        
                     </div>
                 </div>
