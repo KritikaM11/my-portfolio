@@ -61,6 +61,18 @@ const projects = () => {
         </div>
         <div className="myproject">
           <div className="myproject-left">
+            <h1>TrueLink</h1>
+            <a href="https://truelink-frontend.onrender.com"><button>See it in Action</button></a>
+            <h3>TrueLink is a full-stack MERN platform featuring high-fidelity WebRTC video conferencing, Socket.io signaling, real-time messaging, screen sharing, authenticated meeting history, and modern UI.</h3>
+            <p>MongoDB, Express.js, React, Node.js, Socket.io, WebRTC, and CSS.</ p>
+            <a href="https://github.com/KritikaM11/TrueLink"><img src={github} alt="" width={35} /></a>
+          </div>
+          <div className="myproject-right">
+            <img src={truelink} width={500} height={280} />
+          </div>
+        </div>
+        <div className="myproject">
+          <div className="myproject-left">
             <h1>AsyncBeats</h1>
             <a href="https://kritikam11.github.io/AsyncBeats/"><button>See it in Action</button></a>
             <h3>Responsive & Interactive Song Website</h3>
